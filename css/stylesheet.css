@@ -1,0 +1,222 @@
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #1B9772;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+	color: #6c6c6c
+}
+
+h1, h2, h3
+{
+	margin: 0;
+	padding: 0;
+	font-weight: 600;
+	color: #454445;
+}
+
+p, ol, ul
+{
+	margin-top: 0;
+}
+
+ol, ul
+{
+	padding: 0;
+	list-style: none;
+}
+
+p
+{
+	line-height: 180%;
+}
+
+strong
+{
+}
+
+a
+{
+	color: #2C383B;
+}
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.container
+{
+	margin: 0px auto;
+	width: 1200px;
+}
+
+
+	
+#perimeter
+{
+	background: #FFF;
+	width:100%;
+	height:auto;
+	overflow:hidden;
+}
+
+header
+{
+	position: relative;
+	height: 100px;
+}
+img#splash{
+	width:100%;
+	
+}
+
+
+
+/*********************************************************************************/
+/* Article Column                                                                */
+/*********************************************************************************/
+.info{
+	width: 100%;
+	text-align:center;
+}
+
+.column
+{
+	float: left;
+	width: 30%;
+	margin-right: 1%;
+	margin-left: 1%;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo
+{
+	position: absolute;
+	top: 2em;
+	left: 0;
+	width: 100%;
+}
+
+#logo h1
+{
+	display: inline-block;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #2C383B;
+	padding-right: 0.50em;
+	border-right: 1px solid rgba(0,0,0,.3);
+}
+
+#logo span
+{
+	position: absolute;
+	top: 1.4em;
+	display: inline-block;
+	padding-left: 1.50em;
+	letter-spacing: 0.10em;
+	text-transform: uppercase;
+	font-size: 0.90em;
+}
+
+#logo a
+{
+	text-decoration: none;
+	color: #2C383B;
+}
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+nav
+{
+	position: absolute;
+	right: 0;
+	top: 1em;
+}
+
+nav ul
+{
+	display: inline-block;
+}
+
+nav li
+{
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 60px;
+}
+
+nav li a, nav li span
+{
+	display: inline-block;
+	margin-left: 1px;
+	padding: 0em 1.5em;
+	letter-spacing: 0.10em;
+	text-decoration: none;
+	font-size: 1em;
+	text-transform: uppercase;
+	outline: 0;
+	color: #2C383B;
+	background: #ECECEC;
+}
+
+nav li:hover a, nav li.active a, nav li.active span
+{
+	background: #224CB8;
+	color: #FFF;
+}
+
+nav .current_page_item a
+{
+	background: #224CB8;
+	color: #FFF;
+}
+
+nav .icon
+{
+}
+/*********************************************************************************/
+/* Slideshow                                                                     */
+/*********************************************************************************/
+/*********************************************************************************/
+/* Smartphone                                                                   */
+/*********************************************************************************/
+@media (max-width: 480px) {
+	
+	header h1{
+		font-size:5em;
+		text-align:center;
+		}
+	
+	header nav ul{
+		padding:0;
+		background-color:#fff;
+	}
+	header nav ul li{
+		margin:0;
+		background: #333;
+		display: block;
+		margin-bottom: 2px;
+		float:none;
+		
+	}
+	header nav ul li a{
+		display:block;
+		padding: 10px;
+		text-align: center;
+	}
+}
